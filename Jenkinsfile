@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'santhosh2010/my-flask-app:latest'
+        DOCKER_IMAGE = 'kirthiksubbiah/my-flask-app:latest'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git url:'https://github.com/Santhosh2010-ramesh/jenkins-assignment-4.git',branch: 'main'
+                git url:'https://github.com/kirthiksubbiah/jenkins-4.git',branch: 'main'
             }
         }
 
